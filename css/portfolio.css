@@ -1,0 +1,260 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: navFont;
+  src: url(../fonts/Rounded_Elegance.ttf);
+}
+
+@font-face {
+  font-family: headFont;
+  src: url(../fonts/Cute_Meow.otf);
+}
+
+body {
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    background-color: rgba(175, 192, 220, .3);
+}
+
+h1
+{
+	font-family: headFont;
+	font-size: 45px;
+  margin: 0px;
+	margin-left: 4px;
+}
+
+h2{
+  font-family: Bangla MN;
+  font-size: 40px;
+}
+
+header{
+	background-color: #212940;
+	color: white;
+	display: flex;
+	padding: 10px;
+
+}
+
+header h1{
+	flex-grow: 1;
+}
+
+header a{
+	color: white;
+	text-decoration: none;
+}
+
+header a:hover{
+	color: white;
+}
+
+nav{
+	display: flex;
+	align-items: center;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-grow: 2;
+  justify-content: flex-end;
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+}
+
+nav ul li{
+	margin: 5px;
+}
+nav ul a{
+	padding: 5px;
+	font-family: navFont;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.0);
+  border-radius: 5px;
+}
+nav ul a:visited{
+	color: white;
+}
+
+nav ul a:hover{
+	border: 1px solid;
+	border-color: #EECFA3;
+	color: #EECFA3;
+	border-radius: 5px;
+}
+
+footer{
+	background-color: #212940;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	min-height: 60px;
+}
+.socialMedia{
+	margin: 5px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%; /* add border-radius */
+}
+
+#mainArea{
+  width: 65%;
+  margin: 0 auto;
+  min-height: 85vh;
+  padding: 50px;
+  padding-bottom: 30px;
+}
+
+#me{
+  width: 25vw;
+  margin-right: 40px;
+  -webkit-box-shadow: -16px 16px 0px 0px rgba(33, 41, 64, 1);
+  -moz-box-shadow:    -16px 16px 0px 0px rgba(33, 41, 64, 1);
+  box-shadow:         -16px 16px 0px 0px rgba(33, 41, 64, 1);
+  border-radius: 30px;
+}
+
+#about{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  align-items: center;
+}
+
+.workLink{
+  display: flex;
+  border-radius: 20px;
+  width: 20vw;
+  -webkit-box-shadow: -5px 6px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    -5px 6px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         -5px 6px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.workContainer {
+  display: flex;
+  text-align: center;
+  position: relative;
+}
+
+#works{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width:100%;
+}
+
+#container{
+  display: flex;
+  min-height: 85vh;
+  justify-content: center;
+}
+
+.workFont{
+  font-family: BM Kirang Haerang;
+  font-size: 50px;
+  color:white;
+  text-decoration: none;
+  -webkit-text-stroke: 1px #23430C;
+  text-shadow: -1px 1px 3px #000,
+				  1px 1px 3px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+}
+
+.workFont:hover{
+  color:white;
+}
+
+.workContainer a{
+  filter: brightness(90%);
+}
+
+.workContainer:hover{
+  filter: brightness(85%);
+}
+
+
+.red{
+  color:red;
+}
+
+form{
+  background-color: rgba(175, 192, 220, .7);
+  border-radius: 35px;
+  padding:30px;
+  -webkit-box-shadow: 1px 4px 7px 0px rgba(33, 41, 64, 0.36);
+  -moz-box-shadow:    1px 4px 7px 0px rgba(33, 41, 64, 0.36);
+  box-shadow:         1px 4px 7px 0px rgba(33, 41, 64, 0.36);
+}
+
+.form-control:focus {
+  border-color: rgba(250, 231, 149, 1);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.3), 0 0 12px rgba(238, 207, 163, 0.9);
+}
+
+#gallery{
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  margin: 10px;
+  padding: 10px;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,.1);
+
+}
+
+#worksNavContainer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#worksNav{
+  background-color: rgba(33, 41, 64, .8);
+  width:100%;
+  padding:20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 25px;
+}
+
+
+#worksNav a{
+  text-decoration: none;
+  color: white;
+  display: flex;
+  font-family: Bangla MN;
+  line-height: 0.9;
+  padding-top: 15px;
+}
+
+#worksNav a:hover{
+  color:#EECFA3;
+  border-bottom: 2px solid #EECFA3;
+}
+
+.picture{
+  height: 20vw;
+}
+
+#gallery a:hover{
+  filter:brightness(85%);
+}
